@@ -12,18 +12,21 @@ body, button, input {
 }
 
 .background {
-  display: flex;
+  display: flexbox;
+  flex-direction: row;
   min-height: 100vh;
 }
  a{
      color: crimson;
      border: darkblue;
      border-radius: 2px;
-     display: inline;
+     display: flexbox;
+     flex-direction: row;
  }
  .refresh{
-     color: darkgreen;
-     display: inline;
+     color: #006400;
+     display: flexbox;
+     flex-direction: row;
      margin-left: 5%;
  }
 
@@ -43,8 +46,9 @@ body, button, input {
 
 .screen:after {
   content: '';
-  display: block;
-  position: absolute;
+  display: flexbox;
+  flex-direction: row;
+  position: relative;
   top: 0;
   left: 20px;
   right: 20px;
@@ -55,28 +59,29 @@ body, button, input {
 }
 
 .screen-body {
-  display: flex;
+  display: flexbox;
+  flex-direction: row;
 }
 
 .screen-body-item {
   flex: 1;
-  padding: 50px;
+  padding: 25px;
 }
 
 .screen-body-item.left {
-  display: flex;
-  flex-direction: column;
+  display: flexbox;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 
 }
 
 .app-title {
-  display: flex;
-  /*flex-direction: column;*/
+  display: flexbox;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: #33d9b2;f;
+  color: #33d9b2;
   font-size: 26px;
   text-transform: uppercase;
   border-left: 4px solid #218c74;
@@ -94,12 +99,15 @@ body, button, input {
 
 .app-form-control {
   width: 100%;
+  position: relative;
+  display: flexbox;
+  flex-direction: row;
   padding: 10px 0;
   background: none;
   border: none;
   border-bottom: 1px solid #666;
   color: #ddd;
-  font-size: 9px;
+  font-size: 14px;
   outline: none;
   transition: border-color .2s;
 }
@@ -112,7 +120,7 @@ body, button, input {
   color: gold;
 }
 .api{
-  widows: 100px;
+  widows: 160px;
   height: 500px;
 }
 .app-form-control::placeholder {
@@ -124,10 +132,17 @@ body, button, input {
 .app-form-control:focus {
   border-bottom-color: #ddd;
 }
+.screen-body-item{
+  padding-top: 1px;
+}
+
 
 .app-form-button {
   background: none;
   border: none;
+  position: relative;
+  display: flexbox;
+  flex-direction: row;
   color: #33d9b2;
   font-size: 14px;
   cursor: pointer;
@@ -142,11 +157,12 @@ body, button, input {
 .showdata{
   text-align: center;
   color: white;
+  display: flexbox;
   font-size: 1.2rem;
   padding-top: -10px;
   padding-bottom: 10px;
 }
-@media only screen and (max-device-width: 480px) {
+@media only screen and (min-device-width: 480px) {
 
 }
 
