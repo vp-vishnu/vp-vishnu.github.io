@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid 19 Tester</title>
+    <link rel="stylesheet" href="firstcss.css">
+    <link class="icon1" rel = "icon" href = "iconfinder_01-Virus_5929134.png" 
+        type = "image/x-icon">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+          <div class="screen">
+            <div class="screen-body">
+              <div class="screen-body-item left">
+                <div class="app-title">
+                  <div class="animated_infinite_pulse">
+                    Covid-19  <br> Tester <br>
+                  </div>
+                </div>
+              </div>
+              <div class="screen-body-item">
+                <div class="app-form">
+                  <div class="app-form-group">
+                    <input type="text" class="app-form-control" placeholder="Enter Your Name" id="nameinput">
+                  </div>
+                  <div class="app-form-group">
+                    <input  type="text"  class="app-form-control" placeholder="Enter a number from 1 to 10" id="numberinput">
+                  </div>
+                  <div > 
+                    <input type="button" name="" value="Show Result" class="app-form-button" onclick="calcy()">
+                  </div>            
+                </div>
+            </div>
+      
+          </div>
+            <div class="app-form-group showdata">
+                    <p id="showData" >  </p>
+           </div>
+        </div>
+        <a href="https://twitter.com/vpvistin" > Click for Twitter - @vpvistin</a>
+        <div class="refresh">Stay Home. Stand Alone.💃</div>
+        <br>
+        <div class="disclaimer"> Disclaimer * There is always 100% chance of everyone getting infected by covid-19 if we dont follow the precautionary measures. :) * </div>
+      <br>
+      <div class="location"> Enter your location or click on the map to know the status about your location</div>
+           <br>
+      <iframe class="api" src="https://www.bing.com/covid/local/india"></iframe>
+      
+      </div>
+    <script src="first.js"></script>
+</body>
+</html>
